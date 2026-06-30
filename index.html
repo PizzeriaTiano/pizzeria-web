@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzeria Tiano</title>
+    <style>
+        :root { --red: #c62828; --green: #2e7d32; --dark: #212121; }
+        body { font-family: 'Segoe UI', Roboto, sans-serif; background-color: #faf9f6; color: var(--dark); margin: 0; padding: 0; line-height: 1.6; text-align: center; }
+        header { background: linear-gradient(135deg, var(--green) 33%, #fff 33%, #fff 66%, var(--red) 66%); padding: 40px 20px; color: white; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+        .header-content { background: rgba(0, 0, 0, 0.85); display: inline-block; padding: 20px 40px; border-radius: 8px; }
+        h1 { margin: 0; font-size: 2.5rem; letter-spacing: 2px; }
+        .subtitle { margin: 5px 0 0; font-style: italic; color: #ccc; }
+        .container { max-width: 1000px; margin: 40px auto; padding: 0 20px; display: flex; flex-wrap: wrap; gap: 30px; justify-content: center; }
+        .branch { background: white; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); padding: 30px; flex: 1; min-width: 300px; max-width: 450px; text-align: left; border-top: 5px solid var(--red); }
+        .branch:first-child { border-top-color: var(--green); }
+        h2 { color: var(--dark); margin-top: 0; border-bottom: 2px solid #f0f0f0; padding-bottom: 10px; }
+        .info-block { margin-bottom: 20px; }
+        .info-block strong { display: block; color: #555; text-transform: uppercase; font-size: 0.85rem; letter-spacing: 1px; }
+        .hours-grid { display: grid; grid-template-columns: auto 1fr; gap: 5px 15px; }
+        .cta-section { margin: 5px auto 50px; padding: 0 20px; }
+        .btn-fb { display: inline-block; padding: 15px 35px; background-color: #1877f2; color: white; text-decoration: none; border-radius: 30px; font-weight: bold; font-size: 1.1rem; box-shadow: 0 4px 12px rgba(24,119,242,0.3); transition: transform 0.2s; }
+        .btn-fb:hover { transform: translateY(-2px); }
+        footer { margin-top: 40px; padding: 20px; background: #eeebe4; font-size: 0.9rem; color: #666; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-content">
+            <h1>Pizzeria Tiano</h1>
+            <p class="subtitle">Naše webové stránky momentálně připravujeme</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- Pobočka Heřmanův Městec -->
+        <div class="branch">
+            <h2>Heřmanův Městec</h2>
+            <div class="info-block">
+                <strong>Adresa</strong>
+                Náměstí Míru 279, Heřmanův Městec, 538 03
+            </div>
+            <div class="info-block">
+                <strong>Otevírací doba</strong>
+                <div class="hours-grid">
+                    <span>Po &ndash; So:</span> <span>10:00 &ndash; 20:00</span>
+                    <span>Ne:</span> <span>11:00 &ndash; 20:00</span>
+                </div>
+            </div>
+            <div class="info-block">
+                <strong>Kontakt</strong>
+                E-mail: <a href="mailto:pizzeriatiano@email.cz">pizzeriatiano@email.cz</a>
+            </div>
+        </div>
+
+        <!-- Pobočka Slatiňany -->
+        <div class="branch">
+            <h2>Slatiňany</h2>
+            <div class="info-block">
+                <strong>Adresa</strong>
+                Tomáše Garriqua Masaryka 117, Slatiňany, 538 21
+            </div>
+            <div class="info-block">
+                <strong>Otevírací doba</strong>
+                <div class="hours-grid">
+                    <span>Po &ndash; Čt:</span> <span>10:00 &ndash; 20:00</span>
+                    <span>Pá &ndash; So:</span> <span>10:00 &ndash; 21:00</span>
+                    <span>Ne:</span> <span>11:00 &ndash; 20:00</span>
+                </div>
+            </div>
+            <div class="info-block">
+                <strong>Kontakt</strong>
+                Telefon: <a href="tel:+420603479772">+420 603 479 772</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="cta-section">
+        <!-- ZDE nahraďte znak # kompletním odkazem na váš Facebook (např. https://facebook.com) -->
+        <a href="#" class="btn-fb" target="_blank">Sledujte naše novinky na Facebooku</a>
+    </div>
+
+    <footer>
+        &copy; 2026 Pizzeria Tiano. Všechna práva vyhrazena.
+    </footer>
+
+</body>
+</html>
